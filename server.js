@@ -72,7 +72,7 @@ const replaceVar = function (temp, product) {
 // Declearing the important variables
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-const port = 3000;
+const port = process.env.PORT || 3000;
 let id;
 
 // Route for overview section
